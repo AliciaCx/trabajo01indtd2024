@@ -1,0 +1,11 @@
+---
+title: "Enunciados Problemas"
+author: "Alicia Casaux Vazquez"
+date: "Curso 2024-2025"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
