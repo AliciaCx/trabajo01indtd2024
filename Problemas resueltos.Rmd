@@ -9,3 +9,47 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# PROBLEMA 1
+
+Aplica los criterios de decisión bajo incertidumbre al problema cuya matriz de valores numéricos viene dada en la tabla siguiente:
+
+|         | $e_1$ | $e_2$ | $e_3$ | $e_4$ |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+| $d_1$   |  10   |  -2   |   5   |   7   |
+| $d_1$   |  -3   |  12   |   4   |  -1   |
+| $d_1$   |   6   |  -7   |   8   |   3   |
+| $d_1$   |   2   |   0   |  -5   |   9   |
+
+
+Resolver considerando las siguientes situaciones:
+
+  a) Beneficios (favorable)
+  
+  b) Costos (desfavorable)
+  
+# PROBLEMA 2
+
+Isabel necesita un nuevo plan de telefonía móvil. Su compañía telefónica le hz ofrecido los siguientes planes:
+
+  -   Con el *Plan Básico* debe pagar 20 euros al mes, le incluye 100 minutos de llamada y 2 GB de datos móviles.
+  
+  -   Con el *Plan Estándar* tendrá 300 minutos de llamada y 5GB de datos, esto supone que debe pagar 30 euros al mes.
+  
+  -   Con el *Plan Premium* debe pagar 40 euros al mes pero le ofrece minutos y datos ilimitados.
+  
+Isabel normalmente usa unos 3GB de datos al mes, pero en meses de mucho trabajo fuera de casa podría necesitar hasta 7GB. Sabiendo que:
+
+  -   1GB extra tiene un costo de 1.5€
+  
+  -   2GB extra tiene un costo de 2.5€
+  
+  -   5GB extra tiene un costo de 4€
+  
+¿Qué le recomendaría si quiere evaluar el coste que tendrá el primer año?
+
+
+
+
+
+
+
