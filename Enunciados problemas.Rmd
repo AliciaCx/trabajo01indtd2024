@@ -48,8 +48,7 @@ Isabel normalmente usa unos 3GB de datos al mes, pero en meses de mucho trabajo 
   
 ¿Qué le recomendaría si quiere evaluar el coste que tendrá el primer año?
 
-
-
+**NOTA:** Cuando sea necesario se utilizará un alfa = 0.5
 
 
 
