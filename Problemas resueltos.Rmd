@@ -96,7 +96,7 @@ cat("La alternativa óptima según el criterio de Laplace es", names(sol01a_lapl
 cat("La alternativa óptima según el criterio de Punto Ideal es", names(sol01a_puntoideal$AlternativaOptima), "siendo el valor óptimo", sol01a_puntoideal$ValorOptimo)
 ```
 
-## Solución apartado a) Costos (desfavorable)
+## Solución apartado b) Costos (desfavorable)
 ```{r, echo=FALSE}
 source("teoriadecision_funciones_incertidumbre.R")
 
@@ -170,10 +170,67 @@ Isabel normalmente usa unos 3GB de datos al mes, pero en meses de mucho trabajo 
   
 ¿Qué le recomendaría si quiere evaluar el coste que tendrá el primer año?
 
+## Solución
 
+  -   **Decisor:** Isabel
+  
+  -   **Modelo:** Costos
+  
+  -   **Alternativas:** 
+  
+        -   $d_1$ = "Plan Básico"
+    
+        -   $d_2$ = "Plan Estándar"
+    
+        -   $d_3$ = "Plan Premium"
+    
+  -   **Estados de la naturaleza:**
+  
+        -   $e_1$ = Consumo de 3GB al mes
+    
+        -   $e_2$ = Consumo de 7GB al mes
+  
+  -   **Matriz de decisión:**
+  
+        -   m11($d_1 e_1$) = 20€ x 12meses + (1GB extra x 1,5€) x 12meses 
+    
+        -   m12($d_1 e_2$) = 20€ x 12meses + (5GB extra x 4€) x 12meses 
+    
+        -   m21($d_2 e_1$) = 30€ x 12meses 
+    
+        -   m22($d_2 e_2$) = 30€ x 12meses + (2GB extra x 2.5€) x 12meses 
 
+        -   m31($d_3 e_1$) = 40€ x 12meses 
+    
+        -   m32($d_3 e_2$) = 40€ x 12meses 
 
+Por lo tanto, la matriz queda de la siguiente forma:
+```{r, echo=FALSE}
+m11 <- 20*12+(1*1.5)*12
+m12 <- 20*12+(5*4)*12
+m21 <- 30*12
+m22 <- 30*12+(2*2.5)*12
+m31 <- 40*12
+m32 <- 40*12
 
+tab02 <- crea.tablaX(c(m11, m12,
+                       m21, m22,
+                       m31, m32), numalternativas = 3, numestados = 2)
+rownames(tab02) <- c("Plan Básico", "Plan Estándar", "Plan Premium")
+colnames(tab02) <- c("3GB/mes", "7GB/mes")
+tab02 %>%
+  kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "condensed","HOLD_position"), 
+                position = "center",
+                full_width = FALSE)
+sol02 <- criterio.Todos(tab02, alfa = 0.5, F)
+sol02 %>%
+  kable(booktabs = TRUE,format = "latex") %>%
+  kable_styling(latex_options = c("striped", "condensed","HOLD_position"), 
+                position = "center",
+                full_width = TRUE)
 
+```
 
+La mejor decisión sería utilizar la alternativa **Plan Básico** ya que es la alternativa óptima en la mayoría de los criterios.
 
