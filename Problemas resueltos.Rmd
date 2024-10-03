@@ -1,7 +1,7 @@
 ---
 title: "Problemas resueltos"
 author: "Alicia Casaux Vazquez"
-date: "2024-09-26"
+date: "Curso 2024-2025"
 output:
   pdf_document:
     toc: true
@@ -192,17 +192,17 @@ Isabel normalmente usa unos 3GB de datos al mes, pero en meses de mucho trabajo 
   
   -   **Matriz de decisión:**
   
-        -   m11($d_1 e_1$) = 20€ x 12meses + (1GB extra x 1,5€) x 12meses 
+        -   m11($d_1 e_1$) = 20€ x 12meses + (1GB extra x 1,5€) x 12meses = `r 20*12+(1*1.5)*12` 
     
-        -   m12($d_1 e_2$) = 20€ x 12meses + (5GB extra x 4€) x 12meses 
+        -   m12($d_1 e_2$) = 20€ x 12meses + (5GB extra x 4€) x 12meses = `r 20*12+(5*4)*12`
     
-        -   m21($d_2 e_1$) = 30€ x 12meses 
+        -   m21($d_2 e_1$) = 30€ x 12meses = `r 30*12`
     
-        -   m22($d_2 e_2$) = 30€ x 12meses + (2GB extra x 2.5€) x 12meses 
+        -   m22($d_2 e_2$) = 30€ x 12meses + (2GB extra x 2.5€) x 12meses = `r 30*12+(2*2.5)*12`
 
-        -   m31($d_3 e_1$) = 40€ x 12meses 
+        -   m31($d_3 e_1$) = 40€ x 12meses = `r 40*12`
     
-        -   m32($d_3 e_2$) = 40€ x 12meses 
+        -   m32($d_3 e_2$) = 40€ x 12meses = `r 40*12`
 
 Por lo tanto, la matriz queda de la siguiente forma:
 ```{r, echo=FALSE}
