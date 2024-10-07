@@ -1,26 +1,28 @@
-# Trabajo01 individual TD 2024
+# Trabajo01 individual: Teoria de la Decisión
 
-Hecho por: **ALICIA CASAUX VAZQUEZ**
+### Alicia Casaux Vazquez
+### Curso 2024-2023
+### Grado en Estadistica
 
-Este repositorio contiene la resolución de dos problemas de Teoría de la Decisión bajo Incertidumbre como parte de la asignatura. El objetivo de este trabajo es aplicar diferentes métodos de decisión utilizando el lenguaje de programación **R**.
+## Descripcion
 
-## Contenido del repositorio
+Este trabajo contiene la resolución de dos problemas, empleando los diferentes criterios de toma de **decisión bajo incertidumbre** vistos en la asignatura, utilizando como herramienta el lenguaje de programacion **R**.
 
-  -  **Problema 1**: Tabla de decisión con valores inventados, resuelta utilizando los diferentes métodos de decisión bajo incertidumbre. El problema se resuelve por separado para situaciones favorables y desfavorables, mostrando los resultados obtenidos con cada método.
+## Descripción de los problemas 
 
-  -  **Problema 2**: Un problema basado en una situación real, resuelto utilizando una función en R que devuelve la solución aplicando todos los métodos de decisión en una única tabla.
+  -  **Problema 1**: Tabla de decisión con valores inventados, utilizando los diferentes criterios de decisión bajo incertidumbre. El problema se resuelve por separado para situaciones favorables y desfavorables, mostrando los resultados obtenidos con cada criterio.
+
+  -  **Problema 2**: Un problema basado en una situación real, utilizando una función en R que devuelve la solución aplicando todos los criterios de decisión en una única tabla.
 
 ## Estructura del proyecto
 
-  -  **Problemas_resueltos.Rmd**: Script en RMarkdown con la resolución del primer y segundo problema. 
+  -  **Enunciados_problemas(.Rmd / .pdf)**: documento que incluye los enunciados de los problemas tanto en formato .pdf como .Rmd
 
-  -  **Problemas_resueltos.pdf**: Documento que incluye el enunciado de los problemas y sus respectivas soluciones en formaro pdf.
+  -  **Problemas_resueltos(.Rmd / .pdf)**: archivo con la resolución de los problemas tanto en formato .pdf como .Rmd 
 
   -  **README.md**: Este archivo, que describe el contenido del repositorio.
 
-  -  **Enunciados_problemas.Rmd**: Script en RMarkdown que incluye el enunciado de los problemas.
-
-  -  **Enunciados_problemas.pdf**: Documento que incluye el enunciado de los problemas en formato pdf.
+  -  **teoriadecision_funciones_incertidumbre.R**: archivo que contiene las funciones sobre los distintos criterios utilizadas en la resolución de los problemas.
 
 ## Requisitos del proyecto
 
