@@ -140,6 +140,8 @@ cat("La alternativa óptima según el criterio de Savage es", names(sol01b_savag
 cat("La alternativa óptima según el criterio de Laplace es", names(sol01b_laplace$AlternativaOptima), "siendo el valor óptimo", sol01b_laplace$ValorOptimo)
 ```
 
+
+
 ### Criterio de Punto Ideal
 ```{r, echo=FALSE}
 (sol01b_puntoideal <- criterio.PuntoIdeal(tab01b, F))
@@ -147,12 +149,11 @@ cat("La alternativa óptima según el criterio de Punto Ideal es", names(sol01b_
 ```
 
 
-
 \newpage
   
 # PROBLEMA 2
 
-Isabel necesita un nuevo plan de telefonía móvil. Su compañía telefónica le hz ofrecido los siguientes planes:
+Isabel necesita un nuevo plan de telefonía móvil. Su compañía telefónica le ha ofrecido los siguientes planes:
 
   -   Con el *Plan Básico* debe pagar 20 euros al mes, le incluye 100 minutos de llamada y 2 GB de datos móviles.
   
@@ -223,6 +224,11 @@ tab02 %>%
   kable_styling(latex_options = c("striped", "condensed","HOLD_position"), 
                 position = "center",
                 full_width = FALSE)
+```
+
+Aplicando todos los criterios obtenemos lo siguiente:
+
+```{r, echo=FALSE}
 sol02 <- criterio.Todos(tab02, alfa = 0.5, F)
 sol02 %>%
   kable(booktabs = TRUE,format = "latex") %>%

@@ -30,7 +30,7 @@ Resolver considerando las siguientes situaciones:
 
 # PROBLEMA 2
 
-Isabel necesita un nuevo plan de telefonía móvil. Su compañía telefónica le hz ofrecido los siguientes planes:
+Isabel necesita un nuevo plan de telefonía móvil. Su compañía telefónica le ha ofrecido los siguientes planes:
 
   -   Con el *Plan Básico* debe pagar 20 euros al mes, le incluye 100 minutos de llamada y 2 GB de datos móviles.
   
